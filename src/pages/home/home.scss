@@ -1,3 +1,14 @@
 page-home {
-
+  .segment-md .segment-button {
+    border-bottom-color: rgba(0, 0, 0, 0);
+  }
+  // .item-md ion-thumbnail {
+  //   min-width: 8rem;
+  //   min-height: 8rem;
+  // }
+  .item-md ion-thumbnail img {
+    min-width: 8.4rem;
+    min-height: 6.6rem;
+    border-radius: 4px;
+  }
 }
