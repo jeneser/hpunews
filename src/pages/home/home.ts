@@ -7,7 +7,8 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'home.html'
 })
 export class HomePage {
-  catalog: string = 'rec';
+  catalogArray = ['rec', 'news', 'logistic', 'notice', 'job'];
+  catalog: string = this.catalogArray[0];
 
   constructor(public navCtrl: NavController) {
 
@@ -27,5 +28,19 @@ export class HomePage {
     }, 2000);
   }
 
+  swipeEvent(event) {
+    // 左滑
+    if (event.direction === 2) {
+      if (this.catalogArray.indexOf(this.catalog) < this.catalogArray.length - 1) {
+        this.catalog = this.catalogArray[this.catalogArray.indexOf(this.catalog) + 1];
+      }
+    }
+    // 右滑
+    if (event.direction === 4) {
+      if (this.catalogArray.indexOf(this.catalog) > 0) {
+        this.catalog = this.catalogArray[this.catalogArray.indexOf(this.catalog) - 1];
+      }
+    }
+  }
 
 }

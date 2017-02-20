@@ -34,9 +34,10 @@
       </ion-segment-button>
     </ion-segment>
   </ion-toolbar>
+
 </ion-header>
 
-<ion-content>
+<ion-content (swipe)="swipeEvent($event)">
 
   <ion-refresher (ionRefresh)="doRefresh($event)">
     <ion-refresher-content></ion-refresher-content>
