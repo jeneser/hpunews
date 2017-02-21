@@ -1,5 +1,5 @@
-<ion-header no-border>
-  <ion-navbar color="primary" no-border>
+<ion-header>
+  <ion-navbar>
     <ion-buttons start>
       <button ion-button icon-only>
         <ion-icon name="search"></ion-icon>
@@ -9,186 +9,44 @@
       HPUNEWS
     </ion-title>
     <ion-buttons end>
-      <button ion-button icon-only>
+      <button [navPush]="pushPage" ion-button icon-only>
         <ion-icon name="settings"></ion-icon>
       </button>
     </ion-buttons>
   </ion-navbar>
 
-  <ion-toolbar color="primary">
-    <ion-segment color="light" [(ngModel)]="catalog">
-      <ion-segment-button value="rec">
-        推荐
-      </ion-segment-button>
-      <ion-segment-button value="news">
-        新闻
-      </ion-segment-button>
-      <ion-segment-button value="logistic">
-        后勤
-      </ion-segment-button>
-      <ion-segment-button value="notice">
-        公告
-      </ion-segment-button>
-      <ion-segment-button value="job">
-        招聘
-      </ion-segment-button>
-    </ion-segment>
-  </ion-toolbar>
-
 </ion-header>
 
-<ion-content (swipe)="swipeEvent($event)">
+<ion-content>
 
-  <ion-refresher (ionRefresh)="doRefresh($event)">
-    <ion-refresher-content></ion-refresher-content>
-  </ion-refresher>
+  <ion-tabs #myTabs tabsPlacement="top" (ionChange)="onTabsChange($event)">
+    <ion-tab tabTitle="推荐" [root]="tab1Root"></ion-tab>
+    <ion-tab tabTitle="要闻" [root]="tab2Root"></ion-tab>
+    <!-- <ion-tab tabTitle="后勤" [root]="tab2Root"></ion-tab> -->
+    <!-- <ion-tab tabTitle="公告" [root]="tab2Root"></ion-tab> -->
+    <ion-tab tabTitle="招聘" [root]="tab3Root"></ion-tab>
+  </ion-tabs>
+
+  <ion-slides #mySlider (ionSlideDidChange)="onSlideDidChange($event)">
+
+    <ion-slide style="background: red; color: white;">
+      <h1>Slide 1</h1>
+    </ion-slide>
+
+    <ion-slide style="background: white; color: blue;">
+      <h1>Slide 2</h1>
+    </ion-slide>
+
+    <ion-slide style="background: blue; color: white;">
+      <h1>Slide 3</h1>
+    </ion-slide>
+
+  </ion-slides>
 
   <ion-fab right bottom>
     <button ion-fab color="primary">
       <ion-icon name="paper-plane"></ion-icon>
     </button>
   </ion-fab>
-
-  <div [ngSwitch]="catalog">
-    <ion-list *ngSwitchCase="'rec'">
-      <ion-item>
-        <ion-thumbnail item-left>
-          <img src="assets/imgs/totoro.png">
-        </ion-thumbnail>
-        <h2>我是一只可爱的小狗,快来领养吧!我是一只可爱的小狗,快来领养吧!</h2>
-        <p>我是一只可爱的小狗,快来领养吧!</p>
-        <p>我是一只可爱的小狗,快来领养吧!</p>
-        <button ion-button clear item-right>View</button>
-      </ion-item>
-      <ion-item>
-        <ion-thumbnail item-left>
-          <img src="assets/imgs/totoro.png">
-        </ion-thumbnail>
-        <h2>我是一只可爱的小狗,快来领养吧!我是一只可爱的小狗,快来领养吧!</h2>
-        <p>我是一只可爱的小狗,快来领养吧!</p>
-        <button ion-button clear item-right>View</button>
-      </ion-item>
-      <ion-item>
-        <ion-thumbnail item-left>
-          <img src="assets/imgs/totoro.png">
-        </ion-thumbnail>
-        <h2>我是一只可爱的小狗,快来领养吧!我是一只可爱的小狗,快来领养吧!</h2>
-        <p>我是一只可爱的小狗,快来领养吧!</p>
-        <button ion-button clear item-right>View</button>
-      </ion-item>
-      <ion-item>
-        <ion-thumbnail item-left>
-          <img src="assets/imgs/totoro.png">
-        </ion-thumbnail>
-        <h2>我是一只可爱的小狗,快来领养吧!我是一只可爱的小狗,快来领养吧!</h2>
-        <p>我是一只可爱的小狗,快来领养吧!</p>
-        <button ion-button clear item-right>View</button>
-      </ion-item>
-      <ion-item>
-        <ion-thumbnail item-left>
-          <img src="assets/imgs/totoro.png">
-        </ion-thumbnail>
-        <h2>我是一只可爱的小狗,快来领养吧!我是一只可爱的小狗,快来领养吧!</h2>
-        <p>我是一只可爱的小狗,快来领养吧!</p>
-        <button ion-button clear item-right>View</button>
-      </ion-item>
-      <ion-item>
-        <ion-thumbnail item-left>
-          <img src="assets/imgs/totoro.png">
-        </ion-thumbnail>
-        <h2>我是一只可爱的小狗,快来领养吧!我是一只可爱的小狗,快来领养吧!</h2>
-        <p>我是一只可爱的小狗,快来领养吧!</p>
-        <button ion-button clear item-right>View</button>
-      </ion-item>
-    </ion-list>
-
-    <ion-list *ngSwitchCase="'news'">
-      <ion-item>
-        <ion-thumbnail item-left>
-          <img src="assets/imgs/dog.jpg">
-        </ion-thumbnail>
-        <h2>Ruby2</h2>
-      </ion-item>
-      <ion-item>
-        <ion-thumbnail item-left>
-          <img src="assets/imgs/dog.jpg">
-        </ion-thumbnail>
-        <h2>Ruby2</h2>
-      </ion-item>
-      <ion-item>
-        <ion-thumbnail item-left>
-          <img src="assets/imgs/dog.jpg">
-        </ion-thumbnail>
-        <h2>Ruby2</h2>
-      </ion-item>
-    </ion-list>
-
-    <ion-list *ngSwitchCase="'logistic'">
-      <ion-item>
-        <ion-thumbnail item-left>
-          <img src="assets/imgs/dog.jpg">
-        </ion-thumbnail>
-        <h2>Luna</h2>
-      </ion-item>
-      <ion-item>
-        <ion-thumbnail item-left>
-          <img src="assets/imgs/dog.jpg">
-        </ion-thumbnail>
-        <h2>Luna</h2>
-      </ion-item>
-      <ion-item>
-        <ion-thumbnail item-left>
-          <img src="assets/imgs/dog.jpg">
-        </ion-thumbnail>
-        <h2>Luna</h2>
-      </ion-item>
-    </ion-list>
-
-    <ion-list *ngSwitchCase="'notice'">
-      <ion-item>
-        <ion-thumbnail item-left>
-          <img src="assets/imgs/dog.jpg">
-        </ion-thumbnail>
-        <h2>Luna2</h2>
-      </ion-item>
-      <ion-item>
-        <ion-thumbnail item-left>
-          <img src="assets/imgs/dog.jpg">
-        </ion-thumbnail>
-        <h2>Luna2</h2>
-      </ion-item>
-      <ion-item>
-        <ion-thumbnail item-left>
-          <img src="assets/imgs/dog.jpg">
-        </ion-thumbnail>
-        <h2>Luna2</h2>
-      </ion-item>
-    </ion-list>
-
-    <ion-list *ngSwitchCase="'job'">
-      <ion-item>
-        <ion-thumbnail item-left>
-          <img src="assets/imgs/dog.jpg">
-        </ion-thumbnail>
-        <h2>Luna3</h2>
-      </ion-item>
-      <ion-item>
-        <ion-thumbnail item-left>
-          <img src="assets/imgs/dog.jpg">
-        </ion-thumbnail>
-        <h2>Luna3</h2>
-      </ion-item>
-      <ion-item>
-        <ion-thumbnail item-left>
-          <img src="assets/imgs/dog.jpg">
-        </ion-thumbnail>
-        <h2>Luna3</h2>
-      </ion-item>
-    </ion-list>
-  </div>
-
-  <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
-   <ion-infinite-scroll-content></ion-infinite-scroll-content>
-  </ion-infinite-scroll>
 
 </ion-content>

@@ -1,14 +1,23 @@
 page-home {
-  .segment-md .segment-button {
-    border-bottom-color: rgba(0, 0, 0, 0);
+  height: 100%;
+  ion-tabs > ion-navbar-section, ion-tabs > ion-content-section {
+    display:none;
   }
-  // .item-md ion-thumbnail {
-  //   min-width: 8rem;
-  //   min-height: 8rem;
-  // }
-  .item-md ion-thumbnail img {
-    min-width: 8.4rem;
-    min-height: 6.6rem;
-    border-radius: 4px;
+  ion-slides {
+    height: calc(100% - $tabs-md-tab-min-height);
+    margin-top: $tabs-md-tab-min-height;
+  }
+
+  .cannot-go-left {
+    transform: translate3d(0px, 0px, 0px) !important;
+  }
+  .cannot-go-right {
+    transform: translate3d(-200vw, 0px, 0px) !important;
+  }
+  .swiper-slide {
+    .slide-zoom {
+      text-align:left;
+    }
+    align-items: baseline;
   }
 }
