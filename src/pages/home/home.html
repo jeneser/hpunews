@@ -1,58 +1,42 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="primary">
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>
-      HPUNEWS
+      HPU News
     </ion-title>
-    <ion-buttons end>
-      <button [navPush]="pushPage" ion-button icon-only>
-        <ion-icon name="settings"></ion-icon>
-      </button>
-    </ion-buttons>
   </ion-navbar>
-
-  <ul class="sliderTab">
+  <ul class="sliderTabs" color="primary">
     <li>
-      <button ion-button medium clear>新闻</button>
+      <button ion-button solid medium>新闻</button>
     </li>
     <li>
-      <button ion-button medium clear>新闻</button>
+      <button ion-button solid medium>新闻</button>
     </li>
     <li>
-      <button ion-button medium clear>新闻</button>
+      <button ion-button solid medium>新闻</button>
     </li>
     <li>
-      <button ion-button medium clear>新闻</button>
+      <button ion-button solid medium>新闻</button>
     </li>
     <li>
-      <button ion-button medium clear>新闻</button>
+      <button ion-button solid medium>新闻</button>
     </li>
     <li>
-      <button ion-button medium clear>新闻</button>
+      <button ion-button solid medium>新闻</button>
     </li>
     <li>
-      <button ion-button medium clear>新闻</button>
+      <button ion-button solid medium>新闻</button>
     </li>
-
   </ul>
 </ion-header>
 
 <ion-content>
 
-  <ul>
-    <li>要闻</li>
-    <li>后勤</li>
-    <li>公告</li>
-    <li>招聘</li>
-    <li>美食</li>
-    <li>美食</li>
-  </ul>
-
   <ion-slides #mySlider (ionSlideDidChange)="onSlideDidChange()">
 
-    <ion-slide style="background: red; color: white;">
+    <ion-slide style="color: green;">
       <h1>Slide 1</h1>
     </ion-slide>
 
