@@ -1,23 +1,23 @@
 page-home {
   height: 100%;
-  ion-tabs > ion-navbar-section, ion-tabs > ion-content-section {
-    display:none;
+  // rest
+  ul, li {
+    margin: 0;
+    padding: 0;
   }
-  ion-slides {
-    height: calc(100% - $tabs-md-tab-min-height);
-    margin-top: $tabs-md-tab-min-height;
+  li {
+    list-style: none;
   }
 
-  .cannot-go-left {
-    transform: translate3d(0px, 0px, 0px) !important;
-  }
-  .cannot-go-right {
-    transform: translate3d(-200vw, 0px, 0px) !important;
-  }
-  .swiper-slide {
-    .slide-zoom {
-      text-align:left;
+  .sliderTab {
+    display: flex;
+    align-items: center;
+    height: $button-md-height;
+    overflow-x: auto;
+    .active {
+      border-bottom: solid .4rem;
     }
-    align-items: baseline;
+
   }
+
 }
