@@ -2,21 +2,21 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
 /*
-  Generated class for the FocusNews page.
+  Generated class for the Focus page.
 
   See http://ionicframework.com/docs/v2/components/#navigation for more info on
   Ionic pages and navigation.
 */
 @Component({
-  selector: 'page-focus-news',
-  templateUrl: 'focus-news.html'
+  selector: 'page-focus',
+  templateUrl: 'focus.html'
 })
-export class FocusNewsPage {
+export class FocusPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad FocusNewsPage');
+    console.log('ionViewDidLoad FocusPage');
   }
 
 }
