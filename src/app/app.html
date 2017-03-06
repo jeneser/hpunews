@@ -1,35 +1,52 @@
 <ion-menu [content]="content">
   <ion-header>
-    <ion-toolbar color="primary">
-      <ion-title>Menu</ion-title>
-    </ion-toolbar>
+    <ion-avatar item-left>
+      <img src="assets/imgs/menu-header.jpg">
+    </ion-avatar>
   </ion-header>
-  <ion-content>
-    <ion-list>
-      <button ion-item menuClose="menu1" detail-none>
-        新闻网
+
+  <ion-content class="menu-content">
+    <ion-list class="hot" no-lines>
+      <button menuClose ion-item>
+        <ion-icon md="md-cube" color="primary" item-left></ion-icon>
+        理工大事件
       </button>
-      <button ion-item menuClose="menu2" detail-none>
-        后勤部
-      </button>
-      <button ion-item menuClose="menu3" detail-none>
-        教务处
-      </button>
-      <button ion-item menuClose="menu4" detail-none>
-        学院部
+      <button menuClose ion-item>
+        <ion-icon md="md-analytics" color="secondary" item-left></ion-icon>
+        我感兴趣的
       </button>
     </ion-list>
-    <ion-list>
-      <ion-list-header>
-        Action
-      </ion-list-header>
-      <ion-item>Terminator II</ion-item>
-      <ion-item>The Empire Strikes Back</ion-item>
-      <ion-item>Blade Runner</ion-item>
+
+    <ion-list class="tags" no-lines>
+      <button menuClose ion-item>
+        <ion-icon md="md-list-box" item-left></ion-icon>要闻
+      </button>
+      <button menuClose ion-item>
+        <ion-icon md="md-construct" item-left></ion-icon>后勤
+      </button>
+      <button menuClose ion-item>
+        <ion-icon md="md-bookmarks" item-left></ion-icon>公告
+      </button>
+      <button menuClose ion-item>
+        <ion-icon md="md-color-palette" item-left></ion-icon>社团
+      </button>
+      <button menuClose ion-item>
+        <ion-icon md="md-briefcase" item-left></ion-icon>招聘
+      </button>
     </ion-list>
-    <ion-list>
-      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
-        {{p.title}}
+
+    <ion-list class="other" no-lines>
+      <button menuClose ion-item>
+        <ion-icon md="md-person" color="dark" item-left></ion-icon>账号
+      </button>
+      <button menuClose ion-item>
+        <ion-icon md="md-settings" color="dark" item-left></ion-icon>设置
+      </button>
+      <button menuClose ion-item>
+        <ion-icon md="md-help-circle" color="dark" item-left></ion-icon>反馈
+      </button>
+      <button menuClose ion-item>
+        <ion-icon md="md-alert" color="dark" item-left></ion-icon>关于
       </button>
     </ion-list>
   </ion-content>

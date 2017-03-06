@@ -28,6 +28,7 @@
   <preference name="FadeSplashScreenDuration" value="300"/>
   <preference name="SplashShowOnlyFirstTime" value="false"/>
   <feature name="StatusBar">
+    <preference name="StatusBarOverlaysWebView" value="true" />
     <preference name="StatusBarBackgroundColor" value="#3779f9" />
     <param name="ios-package" onload="true" value="CDVStatusBar"/>
   </feature>

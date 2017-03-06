@@ -3,6 +3,8 @@ import { Platform, Nav } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
 
 import { HomePage } from '../pages/home/home';
+import { JobPage } from '../pages/job/job';
+import { SettingPage } from '../pages/setting/setting';
 
 
 @Component({
@@ -19,8 +21,12 @@ export class MyApp {
     this.initializeApp();
 
     this.pages = [
-      { title: 'Page One', component: HomePage },
-      { title: 'Page Two', component: HomePage }
+      { title: '要闻', component: HomePage },
+      { title: '后勤', component: JobPage },
+      { title: '公告', component: JobPage },
+      { title: '学院', component: JobPage },
+      { title: '招聘', component: JobPage },
+      { title: '设置', component: SettingPage }
     ];
   }
 
