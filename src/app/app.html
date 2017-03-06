@@ -1,1 +1,38 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-menu [content]="content">
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <button ion-item menuClose="menu1" detail-none>
+        新闻网
+      </button>
+      <button ion-item menuClose="menu2" detail-none>
+        后勤部
+      </button>
+      <button ion-item menuClose="menu3" detail-none>
+        教务处
+      </button>
+      <button ion-item menuClose="menu4" detail-none>
+        学院部
+      </button>
+    </ion-list>
+    <ion-list>
+      <ion-list-header>
+        Action
+      </ion-list-header>
+      <ion-item>Terminator II</ion-item>
+      <ion-item>The Empire Strikes Back</ion-item>
+      <ion-item>Blade Runner</ion-item>
+    </ion-list>
+    <ion-list>
+      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        {{p.title}}
+      </button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

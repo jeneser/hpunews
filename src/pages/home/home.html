@@ -1,194 +1,116 @@
-<ion-header no-border>
-  <ion-navbar color="primary" no-border>
-    <ion-buttons start>
-      <button ion-button icon-only>
-        <ion-icon name="search"></ion-icon>
-      </button>
-    </ion-buttons>
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
     <ion-title>
-      HPUNEWS
+      HPU News
     </ion-title>
-    <ion-buttons end>
-      <button ion-button icon-only>
-        <ion-icon name="settings"></ion-icon>
-      </button>
-    </ion-buttons>
   </ion-navbar>
-
-  <ion-toolbar color="primary">
-    <ion-segment color="light" [(ngModel)]="catalog">
-      <ion-segment-button value="rec">
-        推荐
-      </ion-segment-button>
-      <ion-segment-button value="news">
-        新闻
-      </ion-segment-button>
-      <ion-segment-button value="logistic">
-        后勤
-      </ion-segment-button>
-      <ion-segment-button value="notice">
-        公告
-      </ion-segment-button>
-      <ion-segment-button value="job">
-        招聘
-      </ion-segment-button>
-    </ion-segment>
-  </ion-toolbar>
-
 </ion-header>
 
-<ion-content (swipe)="swipeEvent($event)">
+<ion-content>
+  <ion-card>
+    <img src="http://news.hpu.edu.cn/news/upload/2017/2/28205140120.jpg"/>
+    <ion-card-content>
+      <ion-card-title>
+        我校召开本科教学工作诊断与改进评估工作组会议暨评建工作办公室第一次会议
+        </ion-card-title>
+      <p>
+        我校召开本科教学工作诊断与改进评估工作组会议暨评建工作办公室第一次会议,我校召开本科教学工作诊断与改进评估工作组会议暨评建工作办公室第一次会议
+      </p>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <img src="http://news.hpu.edu.cn/news/upload/2017/2/28205140120.jpg"/>
+    <ion-card-content>
+      <ion-card-title>
+        我校召开本科教学工作诊断与改进评估工作组会议暨评建工作办公室第一次会议
+        </ion-card-title>
+      <p>
+        我校召开本科教学工作诊断与改进评估工作组会议暨评建工作办公室第一次会议,我校召开本科教学工作诊断与改进评估工作组会议暨评建工作办公室第一次会议
+      </p>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <img src="http://news.hpu.edu.cn/news/upload/2017/2/28205140120.jpg"/>
+    <ion-card-content>
+      <ion-card-title>
+        我校召开本科教学工作诊断与改进评估工作组会议暨评建工作办公室第一次会议
+        </ion-card-title>
+      <p>
+        我校召开本科教学工作诊断与改进评估工作组会议暨评建工作办公室第一次会议,我校召开本科教学工作诊断与改进评估工作组会议暨评建工作办公室第一次会议
+      </p>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <img src="http://news.hpu.edu.cn/news/upload/2017/2/28205140120.jpg"/>
+    <ion-card-content>
+      <ion-card-title>
+        我校召开本科教学工作诊断与改进评估工作组会议暨评建工作办公室第一次会议
+        </ion-card-title>
+      <p>
+        我校召开本科教学工作诊断与改进评估工作组会议暨评建
+      </p>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <img src="http://news.hpu.edu.cn/news/upload/2017/2/28205140120.jpg"/>
+    <ion-card-content>
+      <ion-card-title>
+        我校召开本科教学工作诊断
+        </ion-card-title>
+      <p>
+        我校召开本科教学工作诊断与改进评估工作组会议暨评建工作办公室第一次会议,我校召开本科教学工作诊断与改进评估工作组会议暨评建工作办公室第一次会议
+      </p>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <img src="http://ionicframework.com/dist/preview-app/www/assets/img/card-saopaolo.png"/>
+    <ion-card-content>
+      <ion-card-title>
+        Nine Inch Nails Live
+        </ion-card-title>
+      <p>
+        The most popular industrial group ever, and largely
+        responsible for bringing the music to a mass audience.
+      </p>
+    </ion-card-content>
+  </ion-card>
+  <div class="card-background-page">
+    <ion-card>
+      <img src="http://ionicframework.com/dist/preview-app/www/assets/img/card-saopaolo.png"/>
+      <div class="card-title">我校召开本科教学工作诊断</div>
+      <div class="card-subtitle">41 Listings</div>
+    </ion-card>
 
-  <ion-refresher (ionRefresh)="doRefresh($event)">
-    <ion-refresher-content></ion-refresher-content>
-  </ion-refresher>
+    <ion-card>
+      <img src="http://ionicframework.com/dist/preview-app/www/assets/img/card-amsterdam.png"/>
+      <div class="card-title">我校召开本科教学工作诊断</div>
+      <div class="card-subtitle">64 Listings</div>
+    </ion-card>
 
-  <ion-fab right bottom>
-    <button ion-fab color="primary">
-      <ion-icon name="paper-plane"></ion-icon>
-    </button>
-  </ion-fab>
+    <ion-card>
+      <img src="http://ionicframework.com/dist/preview-app/www/assets/img/card-sf.png"/>
+      <div class="card-title">我校召开本科教学工作诊断</div>
+      <div class="card-subtitle">72 Listings</div>
+    </ion-card>
 
-  <div [ngSwitch]="catalog">
-    <ion-list *ngSwitchCase="'rec'">
-      <ion-item>
-        <ion-thumbnail item-left>
-          <img src="assets/imgs/totoro.png">
-        </ion-thumbnail>
-        <h2>我是一只可爱的小狗,快来领养吧!我是一只可爱的小狗,快来领养吧!</h2>
-        <p>我是一只可爱的小狗,快来领养吧!</p>
-        <p>我是一只可爱的小狗,快来领养吧!</p>
-        <button ion-button clear item-right>View</button>
-      </ion-item>
-      <ion-item>
-        <ion-thumbnail item-left>
-          <img src="assets/imgs/totoro.png">
-        </ion-thumbnail>
-        <h2>我是一只可爱的小狗,快来领养吧!我是一只可爱的小狗,快来领养吧!</h2>
-        <p>我是一只可爱的小狗,快来领养吧!</p>
-        <button ion-button clear item-right>View</button>
-      </ion-item>
-      <ion-item>
-        <ion-thumbnail item-left>
-          <img src="assets/imgs/totoro.png">
-        </ion-thumbnail>
-        <h2>我是一只可爱的小狗,快来领养吧!我是一只可爱的小狗,快来领养吧!</h2>
-        <p>我是一只可爱的小狗,快来领养吧!</p>
-        <button ion-button clear item-right>View</button>
-      </ion-item>
-      <ion-item>
-        <ion-thumbnail item-left>
-          <img src="assets/imgs/totoro.png">
-        </ion-thumbnail>
-        <h2>我是一只可爱的小狗,快来领养吧!我是一只可爱的小狗,快来领养吧!</h2>
-        <p>我是一只可爱的小狗,快来领养吧!</p>
-        <button ion-button clear item-right>View</button>
-      </ion-item>
-      <ion-item>
-        <ion-thumbnail item-left>
-          <img src="assets/imgs/totoro.png">
-        </ion-thumbnail>
-        <h2>我是一只可爱的小狗,快来领养吧!我是一只可爱的小狗,快来领养吧!</h2>
-        <p>我是一只可爱的小狗,快来领养吧!</p>
-        <button ion-button clear item-right>View</button>
-      </ion-item>
-      <ion-item>
-        <ion-thumbnail item-left>
-          <img src="assets/imgs/totoro.png">
-        </ion-thumbnail>
-        <h2>我是一只可爱的小狗,快来领养吧!我是一只可爱的小狗,快来领养吧!</h2>
-        <p>我是一只可爱的小狗,快来领养吧!</p>
-        <button ion-button clear item-right>View</button>
-      </ion-item>
-    </ion-list>
-
-    <ion-list *ngSwitchCase="'news'">
-      <ion-item>
-        <ion-thumbnail item-left>
-          <img src="assets/imgs/dog.jpg">
-        </ion-thumbnail>
-        <h2>Ruby2</h2>
-      </ion-item>
-      <ion-item>
-        <ion-thumbnail item-left>
-          <img src="assets/imgs/dog.jpg">
-        </ion-thumbnail>
-        <h2>Ruby2</h2>
-      </ion-item>
-      <ion-item>
-        <ion-thumbnail item-left>
-          <img src="assets/imgs/dog.jpg">
-        </ion-thumbnail>
-        <h2>Ruby2</h2>
-      </ion-item>
-    </ion-list>
-
-    <ion-list *ngSwitchCase="'logistic'">
-      <ion-item>
-        <ion-thumbnail item-left>
-          <img src="assets/imgs/dog.jpg">
-        </ion-thumbnail>
-        <h2>Luna</h2>
-      </ion-item>
-      <ion-item>
-        <ion-thumbnail item-left>
-          <img src="assets/imgs/dog.jpg">
-        </ion-thumbnail>
-        <h2>Luna</h2>
-      </ion-item>
-      <ion-item>
-        <ion-thumbnail item-left>
-          <img src="assets/imgs/dog.jpg">
-        </ion-thumbnail>
-        <h2>Luna</h2>
-      </ion-item>
-    </ion-list>
-
-    <ion-list *ngSwitchCase="'notice'">
-      <ion-item>
-        <ion-thumbnail item-left>
-          <img src="assets/imgs/dog.jpg">
-        </ion-thumbnail>
-        <h2>Luna2</h2>
-      </ion-item>
-      <ion-item>
-        <ion-thumbnail item-left>
-          <img src="assets/imgs/dog.jpg">
-        </ion-thumbnail>
-        <h2>Luna2</h2>
-      </ion-item>
-      <ion-item>
-        <ion-thumbnail item-left>
-          <img src="assets/imgs/dog.jpg">
-        </ion-thumbnail>
-        <h2>Luna2</h2>
-      </ion-item>
-    </ion-list>
-
-    <ion-list *ngSwitchCase="'job'">
-      <ion-item>
-        <ion-thumbnail item-left>
-          <img src="assets/imgs/dog.jpg">
-        </ion-thumbnail>
-        <h2>Luna3</h2>
-      </ion-item>
-      <ion-item>
-        <ion-thumbnail item-left>
-          <img src="assets/imgs/dog.jpg">
-        </ion-thumbnail>
-        <h2>Luna3</h2>
-      </ion-item>
-      <ion-item>
-        <ion-thumbnail item-left>
-          <img src="assets/imgs/dog.jpg">
-        </ion-thumbnail>
-        <h2>Luna3</h2>
-      </ion-item>
-    </ion-list>
+    <ion-card>
+      <img src="http://ionicframework.com/dist/preview-app/www/assets/img/card-madison.png"/>
+      <div class="card-title">Madison</div>
+      <div class="card-subtitle">28 Listings</div>
+    </ion-card>
   </div>
 
-  <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
-   <ion-infinite-scroll-content></ion-infinite-scroll-content>
-  </ion-infinite-scroll>
+  <ion-fab right bottom>
+    <button ion-fab><ion-icon name="add"></ion-icon></button>
+    <ion-fab-list side="top">
+      <button ion-fab><ion-icon name="logo-facebook"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-twitter"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-vimeo"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-googleplus"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab>
 
 </ion-content>

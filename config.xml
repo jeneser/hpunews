@@ -19,8 +19,8 @@
     <allow-intent href="itms:*"/>
     <allow-intent href="itms-apps:*"/>
   </platform>
-  <preference name="webviewbounce" value="false"/>
-  <preference name="UIWebViewBounce" value="false"/>
+  <preference name="webviewbounce" value="true"/>
+  <preference name="UIWebViewBounce" value="true"/>
   <preference name="DisallowOverscroll" value="true"/>
   <preference name="android-minSdkVersion" value="16"/>
   <preference name="BackupWebStorage" value="none"/>
@@ -28,6 +28,7 @@
   <preference name="FadeSplashScreenDuration" value="300"/>
   <preference name="SplashShowOnlyFirstTime" value="false"/>
   <feature name="StatusBar">
+    <preference name="StatusBarBackgroundColor" value="#3779f9" />
     <param name="ios-package" onload="true" value="CDVStatusBar"/>
   </feature>
   <plugin name="ionic-plugin-keyboard" spec="~2.2.1"/>
