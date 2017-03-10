@@ -6,47 +6,24 @@
   </ion-header>
 
   <ion-content class="menu-content">
-    <ion-list class="hot" no-lines>
-      <button menuClose ion-item>
-        <ion-icon md="md-cube" color="primary" item-left></ion-icon>
-        理工大事件
-      </button>
-      <button menuClose ion-item>
-        <ion-icon md="md-analytics" color="secondary" item-left></ion-icon>
-        我感兴趣的
+    <ion-list class="focus" no-lines>
+      <button menuClose ion-item *ngFor="let p of focusPages" (click)="openPage(p)">
+        <ion-icon md="{{p.icon}}" item-left></ion-icon>
+        {{ p.title }}
       </button>
     </ion-list>
 
     <ion-list class="tags" no-lines>
-      <button menuClose ion-item>
-        <ion-icon md="md-list-box" item-left></ion-icon>要闻
-      </button>
-      <button menuClose ion-item>
-        <ion-icon md="md-construct" item-left></ion-icon>后勤
-      </button>
-      <button menuClose ion-item>
-        <ion-icon md="md-bookmarks" item-left></ion-icon>公告
-      </button>
-      <button menuClose ion-item>
-        <ion-icon md="md-color-palette" item-left></ion-icon>社团
-      </button>
-      <button menuClose ion-item>
-        <ion-icon md="md-briefcase" item-left></ion-icon>招聘
+      <button menuClose ion-item *ngFor="let p of tagPages" (click)="openPage(p)">
+        <ion-icon md="{{p.icon}}" item-left></ion-icon>
+        {{ p.title }}
       </button>
     </ion-list>
 
     <ion-list class="other" no-lines>
-      <button menuClose ion-item>
-        <ion-icon md="md-person" color="dark" item-left></ion-icon>账号
-      </button>
-      <button menuClose ion-item>
-        <ion-icon md="md-settings" color="dark" item-left></ion-icon>设置
-      </button>
-      <button menuClose ion-item>
-        <ion-icon md="md-help-circle" color="dark" item-left></ion-icon>反馈
-      </button>
-      <button menuClose ion-item>
-        <ion-icon md="md-alert" color="dark" item-left></ion-icon>关于
+      <button menuClose ion-item *ngFor="let p of otherPages" (click)="openPage(p)">
+        <ion-icon md="{{p.icon}}" item-left></ion-icon>
+        {{ p.title }}
       </button>
     </ion-list>
   </ion-content>
