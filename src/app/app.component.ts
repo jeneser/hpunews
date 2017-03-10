@@ -33,7 +33,7 @@ export class MyApp {
   initializeApp() {
     this.platform.ready().then(() => {
       if (this.platform.is('android')) {
-        StatusBar.backgroundColorByHexString('#3779f9');
+        StatusBar.backgroundColorByHexString('#4D3779f9');
       }
       Splashscreen.hide();
     });

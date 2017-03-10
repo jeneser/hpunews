@@ -6,6 +6,7 @@
   <content src="index.html"/>
   <access origin="*"/>
   <allow-navigation href="http://ionic.local/*"/>
+  <allow-navigation href="http://192.168.0.102:8100"/>
   <allow-intent href="http://*/*"/>
   <allow-intent href="https://*/*"/>
   <allow-intent href="tel:*"/>
@@ -27,9 +28,9 @@
   <preference name="SplashMaintainAspectRatio" value="true"/>
   <preference name="FadeSplashScreenDuration" value="300"/>
   <preference name="SplashShowOnlyFirstTime" value="false"/>
+  <!-- <preference name="Fullscreen" value="true"/> -->
   <feature name="StatusBar">
-    <preference name="StatusBarOverlaysWebView" value="true" />
-    <preference name="StatusBarBackgroundColor" value="#3779f9" />
+    <preference name="StatusBarBackgroundColor" value="#4D3779f9"/>
     <param name="ios-package" onload="true" value="CDVStatusBar"/>
   </feature>
   <plugin name="ionic-plugin-keyboard" spec="~2.2.1"/>
