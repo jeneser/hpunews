@@ -10,3 +10,11 @@
     }
   }
 }
+
+// feat android status bar
+.ion-page {
+  ion-header {
+    padding-top: $cordova-md-statusbar-padding;
+    background-color: color($colors, primary);
+  }
+}
