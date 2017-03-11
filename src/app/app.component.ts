@@ -1,6 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { Platform, Nav } from 'ionic-angular';
-import { StatusBar, Splashscreen } from 'ionic-native';
+import { Splashscreen } from 'ionic-native';
 
 import { HomePage } from '../pages/home/home';
 import { FavoritePage } from '../pages/favorite/favorite';
@@ -48,7 +48,7 @@ export class MyApp {
   initializeApp() {
     this.platform.ready().then(() => {
       if (this.platform.is('android')) {
-        StatusBar.backgroundColorByHexString('#003779f9');
+        // StatusBar.backgroundColorByHexString('#003779f9');
       }
       Splashscreen.hide();
     });
