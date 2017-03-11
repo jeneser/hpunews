@@ -28,7 +28,7 @@
   <preference name="SplashMaintainAspectRatio" value="true"/>
   <preference name="FadeSplashScreenDuration" value="300"/>
   <preference name="SplashShowOnlyFirstTime" value="false"/>
-  <preference name="StatusBarBackgroundColor" value="#80367bf0"/>
+  <preference name="StatusBarBackgroundColor" value="#80000000"/>
   <feature name="StatusBar">
     <param name="ios-package" onload="true" value="CDVStatusBar"/>
   </feature>
