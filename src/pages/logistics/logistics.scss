@@ -1,15 +1,19 @@
 page-logistics {
   .item-md {
     img {
-      width: 9.6rem;
-      height: 8rem;
+      width: 10.6rem;
+      height: 9rem;
     }
 
-    ion-thumbnail {
+    ion-thumbnail[item-left] {
       max-width: 10.6rem;
       max-height: 9rem;
+      margin: 16px 16px 0 0;
     }
 
+    .label-md {
+      margin-right: 0;
+    }
     h2 {
       white-space: nowrap;
       overflow: hidden;
