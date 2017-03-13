@@ -1,21 +1,32 @@
 page-focus {
 
   .card-md {
-    margin: 10px 0;
-    width: 100%;
+
+    img {
+      max-height: 220px;
+    }
+
+    .card-content {
+      padding: 8px 0 8px 6px;
+    }
 
     .card-title-md {
+      color: #1a1a1a;
       font-size: 1.6rem;
     }
 
-    img {
-      max-height: 16rem;
-    }
-
     p {
-      font-size: 1.12rem;
-      color: #424242;
+      font-size: 1.12px;
+      color: #757575;
     }
 
+    span:nth-child(1) {
+      color: color($colors, primary);
+    }
+
+    span:nth-child(2) {
+      margin-left: 8px;
+    }
   }
+
 }
