@@ -1,6 +1,9 @@
 // App Global Sass
 // --------------------------------------------------
 .menu-content {
+  .focus {
+    margin-top: 10px;
+  }
   .focus, .tags {
     border-bottom: solid 1px $list-md-border-color;
   }
