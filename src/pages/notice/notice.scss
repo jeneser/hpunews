@@ -1,3 +1,12 @@
 page-notice {
+  
+  .item-md [item-right] {
+    margin: 0;
+  }
 
+  h2 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
 }
