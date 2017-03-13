@@ -1,3 +1,24 @@
 page-job {
+  .card-md {
+    // .card-content {
+    //   padding: 8px 0 8px 6px;
+    // }
 
+    .card-title-md {
+      color: #1a1a1a;
+      font-size: 1.6rem;
+      font-weight: 500;
+    }
+
+    p {
+      font-size: 1.12rem;
+      color: #757575;
+    }
+
+    span:nth-child(1) {
+      margin-right: 8px;
+      color: color($colors, primary);
+    }
+
+  }
 }
