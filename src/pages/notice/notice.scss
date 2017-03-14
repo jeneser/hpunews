@@ -1,12 +1,21 @@
 page-notice {
-  
+
   .item-md [item-right] {
     margin: 0;
   }
 
-  h2 {
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
+  .item-md {
+
+    h2 {
+      color: color($colors, black);
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+
+    p {
+      font-size: 1.28rem;
+      color: colors($colors, dark);
+    }
   }
 }
