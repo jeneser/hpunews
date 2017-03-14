@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { Platform, Nav } from 'ionic-angular';
 import { Splashscreen } from 'ionic-native';
 
@@ -10,12 +10,11 @@ import { NoticePage } from '../pages/notice/notice';
 import { ClubPage } from '../pages/club/club';
 import { JobPage } from '../pages/job/job';
 import { SettingPage } from '../pages/setting/setting';
-import { AboutPage } from '../pages/about/about';
 
 @Component({
   templateUrl: 'app.html'
 })
-export class MyApp {
+export class MyApp implements OnInit {
   @ViewChild(Nav) nav: Nav;
 
   rootPage: any = HomePage;
@@ -25,7 +24,9 @@ export class MyApp {
 
   constructor(public platform: Platform) {
     this.initializeApp();
+  }
 
+  ngOnInit() {
     this.focusPages = [
       { title: '理工大事件', component: HomePage, icon: 'md-cube' },
       { title: '我感兴趣的', component: FavoritePage, icon: 'md-analytics' }
@@ -38,8 +39,7 @@ export class MyApp {
       { title: '招聘', component: JobPage, icon: 'md-briefcase' }
     ];
     this.otherPages = [
-      { title: '设置', component: SettingPage, icon: 'md-settings' },
-      { title: '关于', component: AboutPage, icon: 'md-alert' }
+      { title: '设置', component: SettingPage, icon: 'md-settings' }
     ];
   }
 
