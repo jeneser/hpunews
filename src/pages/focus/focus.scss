@@ -11,22 +11,19 @@ page-focus {
     }
 
     .card-title-md {
-      color: #1a1a1a;
+      color: color($colors, black);
       font-size: 1.6rem;
       font-weight: bold;
     }
 
     p {
-      font-size: 1.12rem;
-      color: #757575;
+      font-size: 1.28rem;
+      color: colors($colors, dark);
     }
 
     span:nth-child(1) {
+      margin-right: 8px;
       color: color($colors, primary);
-    }
-
-    span:nth-child(2) {
-      margin-left: 8px;
     }
   }
 
