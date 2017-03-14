@@ -8,7 +8,6 @@ import { LogisticsPage } from '../pages/logistics/logistics';
 import { NoticePage } from '../pages/notice/notice';
 import { ClubPage } from '../pages/club/club';
 import { JobPage } from '../pages/job/job';
-import { AccountPage } from '../pages/account/account';
 import { SettingPage } from '../pages/setting/setting';
 import { AboutPage } from '../pages/about/about';
 
@@ -22,7 +21,6 @@ import { AboutPage } from '../pages/about/about';
     NoticePage,
     ClubPage,
     JobPage,
-    AccountPage,
     SettingPage,
     AboutPage
   ],
@@ -39,7 +37,6 @@ import { AboutPage } from '../pages/about/about';
     NoticePage,
     ClubPage,
     JobPage,
-    AccountPage,
     SettingPage,
     AboutPage
   ],

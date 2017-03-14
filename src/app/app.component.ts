@@ -9,7 +9,6 @@ import { LogisticsPage } from '../pages/logistics/logistics';
 import { NoticePage } from '../pages/notice/notice';
 import { ClubPage } from '../pages/club/club';
 import { JobPage } from '../pages/job/job';
-import { AccountPage } from '../pages/account/account';
 import { SettingPage } from '../pages/setting/setting';
 import { AboutPage } from '../pages/about/about';
 
@@ -39,7 +38,6 @@ export class MyApp {
       { title: '招聘', component: JobPage, icon: 'md-briefcase' }
     ];
     this.otherPages = [
-      { title: '账号', component: AccountPage, icon: 'md-person' },
       { title: '设置', component: SettingPage, icon: 'md-settings' },
       { title: '关于', component: AboutPage, icon: 'md-alert' }
     ];
