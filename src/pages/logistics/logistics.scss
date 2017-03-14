@@ -11,14 +11,16 @@ page-logistics {
       margin: 16px 16px 0 0;
     }
 
-    .label-md {
-      margin-right: 0;
-    }
     h2 {
-      white-space: nowrap;
+      color: color($colors, black);
+      max-height: 4rem;
+      white-space: normal;
       overflow: hidden;
-      text-overflow: ellipsis;
     }
 
+    p {
+      font-size: 1.28rem;
+      color: colors($colors, dark);
+    }
   }
 }
