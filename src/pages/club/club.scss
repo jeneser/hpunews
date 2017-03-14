@@ -3,7 +3,7 @@ page-club {
     position: relative;
 
     ion-card {
-      height: 12rem;
+      height: 14.4rem;
       width: 64%;
 
       // &:before {
@@ -18,8 +18,12 @@ page-club {
       // }
     }
 
+    img {
+      min-height: 14.4rem;
+    }
+
     p {
-      margin: 20px 0 0;
+      margin: 1.92rem 0 0;
     }
 
     .card-title {
@@ -35,7 +39,7 @@ page-club {
       position: absolute;
       top: 0;
       right: 10px;
-      height: 12rem;
+      height: 14.4rem;
       display: flex;
       justify-content: center;
       flex-direction: column;
