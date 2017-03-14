@@ -1,18 +1,15 @@
 page-job {
   .card-md {
-    // .card-content {
-    //   padding: 8px 0 8px 6px;
-    // }
 
     .card-title-md {
-      color: #1a1a1a;
+      color: color($colors, black);
       font-size: 1.6rem;
-      font-weight: 500;
+      font-weight: bold;
     }
 
     p {
-      font-size: 1.12rem;
-      color: #757575;
+      font-size: 1.28rem;
+      color: color($colors, dark);;
     }
 
     span:nth-child(1) {
