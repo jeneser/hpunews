@@ -1,29 +1,64 @@
 page-focus {
 
-  .card-md {
+  .classify {
+    margin: 8px 0;
+    padding-left: 10px;
+    white-space: nowrap;
+    overflow-x: auto;
+  }
 
-    img {
-      max-height: 220px;
-    }
+  .column {
+    padding: 0 10px;
+    font-size: 2rem;
+    color: color($colors, black);
+    overflow: hidden;
 
-    .card-content {
-      padding: 8px 0 8px 6px;
-    }
-
-    .card-title-md {
-      color: color($colors, black);
-      font-size: 1.6rem;
-      font-weight: bold;
-    }
-
-    p {
-      font-size: 1.28rem;
+    ion-icon {
+      float: right;
+      margin-left: 18px;
       color: color($colors, dark);
     }
+  }
 
-    span:nth-child(1) {
-      margin-right: 8px;
-      color: color($colors, primary);
+  .card-background-page {
+
+    ion-card {
+      position: relative;
+      text-align: center;
+      height: 18rem;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 18rem;
+        background-color: rgba(0, 0, 0, .4);
+      }
+    }
+
+    .card-title {
+      position: absolute;
+      bottom: 20%;
+      left: 2%;
+      padding-right: 18px;
+      font-size: 1.6rem;
+      width: 100%;
+      text-align: left;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .card-subtitle {
+      font-size: 1.0em;
+      position: absolute;
+      bottom: 5%;
+      left: 2%;
+      width: 100%;
+      text-align: left;
+      color: #fff;
     }
   }
 

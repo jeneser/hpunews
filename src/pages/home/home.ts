@@ -1,6 +1,6 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component } from '@angular/core';
 
-import { NavController, Slides, MenuController } from 'ionic-angular';
+import { NavController, MenuController } from 'ionic-angular';
 
 import { SettingPage } from '../setting/setting';
 
@@ -10,7 +10,6 @@ import { SettingPage } from '../setting/setting';
 })
 
 export class HomePage {
-  @ViewChild(Slides) slider: Slides;
 
   pushPage: any;
 

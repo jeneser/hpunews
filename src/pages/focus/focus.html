@@ -4,76 +4,52 @@
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>
-      要闻
+      新闻网
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
-  <ion-card>
-    <img src="assets/imgs/computer.jpeg"/>
-    <ion-card-content>
-      <ion-card-title>
-        我校召开本科教学工作诊断与改进评估工作组会议暨评建工作办公室第一次会议
-      </ion-card-title>
-      <p>
-        <span class="tag">教务处</span>
-        <span calss="time">2017-3-13</span>
-        <span class="visit"> 浏览 2333</span>
-      </p>
-    </ion-card-content>
-  </ion-card>
-  <ion-card>
-    <img src="assets/imgs/computer.jpeg"/>
-    <ion-card-content>
-      <ion-card-title>
-        我校召开本科教学工作诊断与改进评估工作组会议暨评建工作办公室第一次会议
-      </ion-card-title>
-      <p>
-        <span class="tag">教务处</span>
-        <span calss="time">2017-3-13</span>
-        <span class="visit"> 浏览 2333</span>
-      </p>
-    </ion-card-content>
-  </ion-card>
-  <ion-card>
-    <!-- <img src="http://news.hpu.edu.cn/news/upload/2017/2/28205140120.jpg"/> -->
-    <ion-card-content>
-      <ion-card-title>
-        我校召开本科教学工作诊断与改进评估工作组会议暨评建工作办公室第一次会议
-      </ion-card-title>
-      <p>
-        <span class="tag">教务处</span>
-        <span calss="time">2017-3-13</span>
-        <span class="visit"> 浏览 2333</span>
-      </p>
-    </ion-card-content>
-  </ion-card>
-  <ion-card>
-    <img src="assets/imgs/computer.jpeg"/>
-    <ion-card-content>
-      <ion-card-title>
-        我校召开本科教学工作诊断与改进评估工作组会议暨评建工作办公室第一次会议
-      </ion-card-title>
-      <p>
-        <span class="tag">教务处</span>
-        <span calss="time">2017-3-13</span>
-        <span class="visit"> 浏览 2333</span>
-      </p>
-    </ion-card-content>
-  </ion-card>
-  <ion-card>
-    <!-- <img src="http://news.hpu.edu.cn/news/upload/2017/2/28205140120.jpg"/> -->
-    <ion-card-content>
-      <ion-card-title>
-        我校召开本科教学工作诊断与改进评估工作组会议暨评建工作办公室第一次会议
-      </ion-card-title>
-      <p>
-        <span class="tag">教务处</span>
-        <span calss="time">2017-3-13</span>
-        <span class="visit"> 浏览 2333</span>
-      </p>
-    </ion-card-content>
-  </ion-card>
+  <div class="classify">
+    <button ion-button round>教学科研</button>
+    <button ion-button round>学院部处风采</button>
+    <button ion-button round>学生活动</button>
+    <button ion-button round>学术动态</button>
+    <button ion-button round>媒体聚焦</button>
+    <button ion-button round>视频新闻</button>
+    <button ion-button round>党委宣传部</button>
+  </div>
+
+  <h2 class="column">
+    理工要闻
+    <ion-icon ios="ios-list" md="md-list"></ion-icon>
+    <ion-icon ios="ios-refresh" md="md-refresh"></ion-icon>
+  </h2>
+
+  <div class="card-background-page">
+    <ion-card [navPush]="pushPage">
+      <img src="http://ionicframework.com/dist/preview-app/www/assets/img/card-saopaolo.png"/>
+      <div class="card-title">全国大中城市联合招聘高校毕业生精准就业服务试点工作培训会在我校召开</div>
+      <div class="card-subtitle">要闻 2017-2-23</div>
+    </ion-card>
+
+    <ion-card>
+      <img src="http://ionicframework.com/dist/preview-app/www/assets/img/card-amsterdam.png"/>
+      <div class="card-title">我校召开本科教学工作诊断</div>
+      <div class="card-subtitle">要闻 2017-2-23</div>
+    </ion-card>
+
+    <ion-card>
+      <img src="http://ionicframework.com/dist/preview-app/www/assets/img/card-sf.png"/>
+      <div class="card-title">全国大中城市联合招聘高校毕业生精准就业服务试点工作培训会在我校召开</div>
+      <div class="card-subtitle">要闻 2017-2-23</div>
+    </ion-card>
+
+    <ion-card>
+      <img src="http://ionicframework.com/dist/preview-app/www/assets/img/card-madison.png"/>
+      <div class="card-title">雷锋精神代代传</div>
+      <div class="card-subtitle">要闻 2017-2-23</div>
+    </ion-card>
+  </div>
 
 </ion-content>

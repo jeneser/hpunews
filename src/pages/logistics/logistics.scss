@@ -1,25 +1,57 @@
 page-logistics {
+
+  .classify {
+    margin: 8px 0;
+    padding-left: 10px;
+    white-space: nowrap;
+    overflow-x: auto;
+  }
+
+  .column {
+    padding: 0 16px;
+    font-size: 2rem;
+    color: color($colors, black);
+    overflow: hidden;
+
+    ion-icon {
+      float: right;
+      margin-left: 18px;
+      color: color($colors, dark);
+    }
+  }
+
+  .list-md .item-block .item-inner {
+    max-height: 7.2rem;
+    border-bottom: none;
+  }
+
   .item-md {
+    margin: 1.25rem auto;
+
     img {
       width: 10.6rem;
-      height: 9rem;
+      height: 7.2rem;
+    }
+
+    .label-md {
+      margin: 0;
     }
 
     ion-thumbnail[item-left] {
       max-width: 10.6rem;
-      max-height: 9rem;
-      margin: 16px 16px 0 0;
+      max-height: 7.2rem;
+      margin: 0 10px 0 0;
     }
 
     h2 {
       color: color($colors, black);
       max-height: 4rem;
+      margin: 2px 0 16px 0;
       white-space: normal;
       overflow: hidden;
     }
 
     p {
-      font-size: 1.28rem;
       color: color($colors, dark);
     }
   }

@@ -32,9 +32,9 @@ export class MyApp implements OnInit {
       { title: '我感兴趣的', component: FavoritePage, icon: 'md-analytics' }
     ];
     this.tagPages = [
-      { title: '要闻', component: FocusPage, icon: 'md-list-box' },
-      { title: '后勤', component: LogisticsPage, icon: 'md-bookmarks' },
-      { title: '公告', component: NoticePage, icon: 'md-archive' },
+      { title: '新闻网', component: FocusPage, icon: 'md-list-box' },
+      { title: '后勤服务', component: LogisticsPage, icon: 'md-bookmarks' },
+      { title: '最新公告', component: NoticePage, icon: 'md-archive' },
       { title: '社团', component: ClubPage, icon: 'md-chatboxes' },
       { title: '招聘', component: JobPage, icon: 'md-briefcase' }
     ];
