@@ -20,39 +20,47 @@ page-logistics {
     }
   }
 
-  .list-md .item-block .item-inner {
-    max-height: 7.2rem;
-    border-bottom: none;
+  .card-background-page {
+
+    ion-card {
+      position: relative;
+      text-align: center;
+      height: 18rem;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 18rem;
+        background-color: rgba(0, 0, 0, .4);
+      }
+    }
+
+    .card-title {
+      position: absolute;
+      bottom: 20%;
+      left: 2%;
+      padding-right: 18px;
+      font-size: 1.6rem;
+      width: 100%;
+      text-align: left;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .card-subtitle {
+      font-size: 1.0em;
+      position: absolute;
+      bottom: 5%;
+      left: 2%;
+      width: 100%;
+      text-align: left;
+      color: #fff;
+    }
   }
 
-  .item-md {
-    margin: 1.25rem auto;
-
-    img {
-      width: 10.6rem;
-      height: 7.2rem;
-    }
-
-    .label-md {
-      margin: 0;
-    }
-
-    ion-thumbnail[item-left] {
-      max-width: 10.6rem;
-      max-height: 7.2rem;
-      margin: 0 10px 0 0;
-    }
-
-    h2 {
-      color: color($colors, black);
-      max-height: 4rem;
-      margin: 2px 0 16px 0;
-      white-space: normal;
-      overflow: hidden;
-    }
-
-    p {
-      color: color($colors, dark);
-    }
-  }
+  
 }
