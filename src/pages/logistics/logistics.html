@@ -4,96 +4,104 @@
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>
-      后勤
+      后勤服务
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
   <div class="classify">
-    <button ion-button round>通知公告</button>
+    <button ion-button round>优惠打折</button>
     <button ion-button round>后勤风采</button>
     <button ion-button round>党政公开</button>
+  </div>
+
+  <div class="column">
+    <button ion-item>
+      <h2>欢迎关注后勤集团</h2>
+      <p>你要的都在这</p>
+      <button ion-button item-right clear>更多</button>
+    </button>
   </div>
 
   <div class="cover">
     <img src="assets/imgs/banner.jpg" alt="">
   </div>
 
-  <h2 class="column">
-    综合新闻
-    <ion-icon ios="ios-list" md="md-list"></ion-icon>
-    <ion-icon ios="ios-refresh" md="md-refresh"></ion-icon>
-  </h2>
-
-  <ion-list>
-    <ion-item>
+  <div class="column">
+    <button ion-item>
+      <h2>最新资讯速览</h2>
+      <p>后勤集团</p>
+      <button ion-button item-right clear>更多</button>
+    </button>
+  </div>
+  <ion-list class="hot">
+    <button ion-item>
       <ion-thumbnail item-left>
         <img src="http://ionicframework.com/dist/preview-app/www/assets/img/card-amsterdam.png">
       </ion-thumbnail>
       <h2>学生住宿管理委员会组织召开宿舍安全工作会议...</h2>
       <p>新闻动态 2017/3/11</p>
-    </ion-item>
-    <ion-item>
-      <ion-thumbnail item-left>
-        <img src="http://ionicframework.com/dist/preview-app/www/assets/img/card-amsterdam.png">
-      </ion-thumbnail>
-      <h2>学生住宿管理委员会组织召开宿舍</h2>
-      <p>新闻动态 2017/3/11</p>
-    </ion-item>
-    <ion-item>
-      <ion-thumbnail item-left>
-        <img src="http://ionicframework.com/dist/preview-app/www/assets/img/card-amsterdam.png">
-      </ion-thumbnail>
-      <h2>学生住宿管理委员会组织召开..</h2>
-      <p>新闻动态 2017/3/11</p>
-    </ion-item>
-    <ion-item>
-      <ion-thumbnail item-left>
-        <img src="http://ionicframework.com/dist/preview-app/www/assets/img/card-amsterdam.png">
-      </ion-thumbnail>
-      <h2>学生住宿管理委员会组织召开宿舍安</h2>
-      <p>新闻动态 2017/3/11</p>
-    </ion-item>
-    <ion-item>
+    </button>
+    <button ion-item>
       <ion-thumbnail item-left>
         <img src="http://ionicframework.com/dist/preview-app/www/assets/img/card-amsterdam.png">
       </ion-thumbnail>
       <h2>学生住宿管理委员会组织召开宿舍安全工作会议...</h2>
       <p>新闻动态 2017/3/11</p>
-    </ion-item>
-    <ion-item>
+    </button>
+    <button ion-item>
       <ion-thumbnail item-left>
         <img src="http://ionicframework.com/dist/preview-app/www/assets/img/card-amsterdam.png">
       </ion-thumbnail>
-      <h2>教务处关于学习雷锋精神的文件</h2>
-      <p>Hayao Miyazaki • 1988</p>
-    </ion-item>
+      <h2>学生住宿管理委员会组织召开宿舍安全工作会议...</h2>
+      <p>新闻动态 2017/3/11</p>
+    </button>
+    <button ion-item>
+      <ion-thumbnail item-left>
+        <img src="http://ionicframework.com/dist/preview-app/www/assets/img/card-amsterdam.png">
+      </ion-thumbnail>
+      <h2>学生住宿管理委员会组织召开宿舍安全工作会议...</h2>
+      <p>新闻动态 2017/3/11</p>
+    </button>
   </ion-list>
 
-  <div class="card-background-page">
-    <ion-card [navPush]="pushPage">
-      <img src="http://ionicframework.com/dist/preview-app/www/assets/img/card-saopaolo.png"/>
-      <div class="card-title">全国大中城市联合招聘高校毕业生精准就业服务试点工作培训会在我校召开</div>
-      <div class="card-subtitle">要闻 2017-2-23</div>
-    </ion-card>
-
-    <ion-card>
-      <img src="http://ionicframework.com/dist/preview-app/www/assets/img/card-amsterdam.png"/>
-      <div class="card-title">我校召开本科教学工作诊断</div>
-      <div class="card-subtitle">要闻 2017-2-23</div>
-    </ion-card>
-
-    <ion-card>
-      <img src="http://ionicframework.com/dist/preview-app/www/assets/img/card-sf.png"/>
-      <div class="card-title">全国大中城市联合招聘高校毕业生精准就业服务试点工作培训会在我校召开</div>
-      <div class="card-subtitle">要闻 2017-2-23</div>
-    </ion-card>
-
-    <ion-card>
-      <img src="http://ionicframework.com/dist/preview-app/www/assets/img/card-madison.png"/>
-      <div class="card-title">雷锋精神代代传</div>
-      <div class="card-subtitle">要闻 2017-2-23</div>
-    </ion-card>
+  <div class="column">
+    <button ion-item>
+      <h2>通知和公告</h2>
+      <p>后勤集团</p>
+      <button ion-button item-right clear>更多</button>
+    </button>
   </div>
+  <ion-list class="hot">
+    <button ion-item>
+      <ion-thumbnail item-left>
+        <img src="http://ionicframework.com/dist/preview-app/www/assets/img/card-amsterdam.png">
+      </ion-thumbnail>
+      <h2>学生住宿管理委员会组织召开宿舍安全工作会议...</h2>
+      <p>新闻动态 2017/3/11</p>
+    </button>
+    <button ion-item>
+      <ion-thumbnail item-left>
+        <img src="http://ionicframework.com/dist/preview-app/www/assets/img/card-amsterdam.png">
+      </ion-thumbnail>
+      <h2>学生住宿管理委员会组织召开宿舍安全工作会议...</h2>
+      <p>新闻动态 2017/3/11</p>
+    </button>
+    <button ion-item>
+      <ion-thumbnail item-left>
+        <img src="http://ionicframework.com/dist/preview-app/www/assets/img/card-amsterdam.png">
+      </ion-thumbnail>
+      <h2>学生住宿管理委员会组织召开宿舍安全工作会议...</h2>
+      <p>新闻动态 2017/3/11</p>
+    </button>
+    <button ion-item>
+      <ion-thumbnail item-left>
+        <img src="http://ionicframework.com/dist/preview-app/www/assets/img/card-amsterdam.png">
+      </ion-thumbnail>
+      <h2>学生住宿管理委员会组织召开宿舍安全工作会议...</h2>
+      <p>新闻动态 2017/3/11</p>
+    </button>
+  </ion-list>
+
 </ion-content>

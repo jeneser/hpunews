@@ -35,8 +35,8 @@ export class MyApp implements OnInit {
       { title: '新闻网', component: FocusPage, icon: 'md-list-box' },
       { title: '后勤服务', component: LogisticsPage, icon: 'md-bookmarks' },
       { title: '最新公告', component: NoticePage, icon: 'md-archive' },
-      { title: '社团', component: ClubPage, icon: 'md-chatboxes' },
-      { title: '招聘', component: JobPage, icon: 'md-briefcase' }
+      { title: '社团活动', component: ClubPage, icon: 'md-chatboxes' },
+      { title: '就业招聘', component: JobPage, icon: 'md-briefcase' }
     ];
     this.otherPages = [
       { title: '设置', component: SettingPage, icon: 'md-settings' }

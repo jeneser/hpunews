@@ -48,3 +48,20 @@
     }
   }
 }
+
+// hot list
+.hot {
+  .item-md.item-block .item-inner {
+    padding-right: 0;
+  }
+  .item-md {
+    padding: 0 1.6rem;
+    h2 {
+      margin-bottom: 1.6rem;
+      color: color($colors, black);
+      white-space: normal;
+      overflow: hidden;
+      font-size: 1.8rem;
+    }
+  }
+}
