@@ -1,60 +1,46 @@
 page-focus {
-
-  .classify {
-    margin: 1rem 0;
-    padding-left: 1rem;
-    white-space: nowrap;
-    overflow-x: auto;
-  }
-
-  .column {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 2rem 0;
-    padding: 0 1.6rem;
-    color: color($colors, black);
-
-    h2 {
-      margin: 0;
-    }
-
-    .left span {
-      color: color($colors, dark);
-    }
-  }
-
   .play-news {
     position: relative;
     height: 23rem;
     background: color($colors, primary) url(../assets/imgs/bg1.png) no-repeat;
     background-size: cover;
+    .item-md.item-block .item-inner {
+      border: none;
+      button {
+        font-size: 1.4rem;
+      }
+    }
+    .item-md {
+      position: absolute;
+      top: 2rem;
+      bottom: 2rem;
+      right: 2rem;
+      width: 37%;
+      text-align: center;
+      background-color: #fff;
+      box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2),
+                  -1rem -1rem 1rem rgba(0, 0, 0, 0.2);
+      border-radius: .4rem;
+      img {
+        max-width: 64px;
+        margin-bottom: 1.6rem;
+      }
+    }
   }
 
-  .player {
-    position: absolute;
-    top: 2rem;
-    bottom: 2rem;
-    right: 2rem;
-    width: 37%;
-    padding: 2rem 1rem 1rem;
-    text-align: center;
-    background-color: #fff;
-    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, .2);
-    border-radius: .2rem;
-  }
-
-  .item-md {
-    padding: 0 1.6rem;
-
-    h2 {
-      color: color($colors, black);
-      max-height: 4rem;
-      margin: 2px 0 16px 0;
-      white-space: normal;
-      overflow: hidden;
-      font-size: 1.8rem;
-      font-weight: 500;
+  .hot {
+    .item-md.item-block .item-inner {
+      padding-right: 0;
+    }
+    .item-md {
+      padding: 0 1.6rem;
+      h2 {
+        margin-bottom: 1.6rem;
+        color: color($colors, black);
+        white-space: normal;
+        overflow: hidden;
+        font-size: 1.8rem;
+      }
     }
   }
 
