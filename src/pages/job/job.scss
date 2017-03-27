@@ -1,13 +1,10 @@
 page-job {
-  .cover {
-    box-shadow: 0 0.4rem 0.2rem rgba(0, 0, 0, .2);
-  }
   .jobs {
     h3 {
       margin-bottom: 0.8rem;
       font-size: 1.6rem;
       color: color($colors, black);
-      font-weight: bold;
+      font-weight: 500;
       white-space: normal;
     }
   }

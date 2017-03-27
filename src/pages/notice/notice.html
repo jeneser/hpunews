@@ -1,89 +1,48 @@
 <ion-content>
   <div class="cover">
-    <img src="assets/imgs/work.jpg" alt="">
+    <img src="assets/imgs/yellow.png" alt="">
+  </div>
+  <div class="classify">
+    <button ion-button round>讲座信息</button>
+    <button ion-button round>后勤公告</button>
+    <button ion-button round>教务公告</button>
   </div>
 
-  <div class="segment-bar">
-    <ion-segment [(ngModel)]="classify" color="white">
-      <ion-segment-button value="notice">
-        最新公告
-      </ion-segment-button>
-      <ion-segment-button value="lecture">
-        学术讲座
-      </ion-segment-button>
-    </ion-segment>
+  <div class="column">
+    <button ion-item>
+      <h2>最新公告下载</h2>
+      <p>你要的都在这</p>
+      <button ion-button item-right clear>更多</button>
+    </button>
   </div>
 
-  <div [ngSwitch]="classify">
-    <ion-list *ngSwitchCase="'notice'" class="hot">
-      <button ion-item>
-        <ion-thumbnail item-left>
-          <img src="assets/imgs/folder.svg">
-        </ion-thumbnail>
-        <h2>教务处关于学习雷锋精神的文件</h2>
-        <p>2017-3-15</p>
-        <button ion-button clear item-right>下载</button>
-      </button>
-      <button ion-item>
-        <ion-thumbnail item-left>
-          <img src="assets/imgs/folder.svg">
-        </ion-thumbnail>
-        <h2>教务处关于学习雷锋精神的文件</h2>
-        <p>2017-3-15</p>
-        <button ion-button clear item-right>下载</button>
-      </button>
-      <button ion-item>
-        <ion-thumbnail item-left>
-          <img src="assets/imgs/folder.svg">
-        </ion-thumbnail>
-        <h2>教务处关于学习雷锋精神的文件</h2>
-        <p>2017-3-15</p>
-        <button ion-button clear item-right>下载</button>
-      </button>
-      <button ion-item>
-        <ion-thumbnail item-left>
-          <img src="assets/imgs/folder.svg">
-        </ion-thumbnail>
-        <h2>教务处关于学习雷锋精神的文件</h2>
-        <p>2017-3-15</p>
-        <button ion-button clear item-right>下载</button>
-      </button>
-      <button ion-item>
-        <ion-thumbnail item-left>
-          <img src="assets/imgs/folder.svg">
-        </ion-thumbnail>
-        <h2>教务处关于学习雷锋精神的文件</h2>
-        <p>2017-3-15</p>
-        <button ion-button clear item-right>下载</button>
-      </button>
-    </ion-list>
-
-    <ion-list *ngSwitchCase="'lecture'" class="hot">
-      <button ion-item>
-        <ion-thumbnail item-left>
-          <img src="assets/imgs/folder.svg">
-        </ion-thumbnail>
-        <h2>教务处关于学习雷锋精神的文件</h2>
-        <p>2017-3-15</p>
-        <button ion-button clear item-right>下载</button>
-      </button>
-      <button ion-item>
-        <ion-thumbnail item-left>
-          <img src="assets/imgs/folder.svg">
-        </ion-thumbnail>
-        <h2>教务处关于学习雷锋精神的文件</h2>
-        <p>2017-3-15</p>
-        <button ion-button clear item-right>下载</button>
-      </button>
-      <button ion-item>
-        <ion-thumbnail item-left>
-          <img src="assets/imgs/folder.svg">
-        </ion-thumbnail>
-        <h2>教务处关于学习雷锋精神的文件</h2>
-        <p>2017-3-15</p>
-        <button ion-button clear item-right>下载</button>
-      </button>
-    </ion-list>
+  <div class="notice">
+    <button ion-item>
+      <ion-thumbnail item-left>
+        <img src="assets/imgs/folder.svg">
+      </ion-thumbnail>
+      <h2>教务处关于学习雷锋精神的文件</h2>
+      <p>2017-3-15</p>
+      <button ion-button clear item-right>下载</button>
+    </button>
+    <button ion-item>
+      <ion-thumbnail item-left>
+        <img src="assets/imgs/folder.svg">
+      </ion-thumbnail>
+      <h2>教务处关于学习雷锋精神的文件</h2>
+      <p>2017-3-15</p>
+      <button ion-button clear item-right>下载</button>
+    </button>
+    <button ion-item>
+      <ion-thumbnail item-left>
+        <img src="assets/imgs/folder.svg">
+      </ion-thumbnail>
+      <h2>教务处关于学习雷锋精神的文件</h2>
+      <p>2017-3-15</p>
+      <button ion-button clear item-right>下载</button>
+    </button>
   </div>
+
+
 
 </ion-content>
