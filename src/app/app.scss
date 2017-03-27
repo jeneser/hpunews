@@ -1,5 +1,16 @@
 // App Global Sass
 // --------------------------------------------------
+
+// feat android status bar
+.platform-android {
+  .ion-page {
+    ion-header {
+      padding-top: $cordova-md-statusbar-padding;
+      background-color: color($colors, primary);
+    }
+  }
+}
+
 .menu-content {
   .focus {
     margin-top: 10px;
@@ -11,17 +22,35 @@
     ion-icon:first-child {
       max-width: 24px;
     }
+    button {
+      color: color($colors, dark);
+      font-weight: 500;
+    }
+  }
+  .avatar {
+    position: absolute;
+    bottom: 0.8rem;
+    left: 1.6rem;
+    img {
+      height: 6.4rem;
+      margin-bottom: 1.6rem;
+      border-radius: 100%;
+    }
+    p {
+      color: #fff;
+      font-weight: 500;
+    }
   }
 }
 
-// feat android status bar
-.platform-android {
-  .ion-page {
-    ion-header {
-      padding-top: $cordova-md-statusbar-padding;
-      background-color: color($colors, primary);
-    }
-  }
+.mask::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .4);
 }
 
 // tags
@@ -62,8 +91,19 @@
       color: color($colors, black);
       white-space: normal;
       overflow: hidden;
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       font-weight: 500;
     }
+  }
+}
+
+// cover
+.cover {
+  position: relative;
+  line-height: 0;
+  .header {
+      position: absolute;
+      top: $cordova-md-statusbar-padding;
+      left: 0.8rem;
   }
 }

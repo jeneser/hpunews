@@ -4,9 +4,10 @@ page-setting {
     border: none;
   }
   .item-md:not(ion-item-divider):not(p) {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: color($colors, black);
-    line-height: 2;
+    line-height: 1.5;
+    font-weight: 500;
   }
 
 }

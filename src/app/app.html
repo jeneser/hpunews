@@ -1,11 +1,13 @@
 <ion-menu [content]="content">
-  <ion-header>
-    <ion-avatar item-left>
-      <img src="assets/imgs/menu-header.jpg">
-    </ion-avatar>
-  </ion-header>
-
   <ion-content class="menu-content">
+    <div class="cover header-md mask">
+      <img src="assets/imgs/menu-header.jpg" alt="">
+      <div class="avatar">
+        <img src="assets/imgs/me.png">
+        <p>hi, 遇见你真好！</p>
+      </div>
+    </div>
+
     <ion-list class="focus" no-lines>
       <button menuClose ion-item *ngFor="let p of focusPages" (click)="openPage(p)">
         <ion-icon md="{{p.icon}}" item-left></ion-icon>
