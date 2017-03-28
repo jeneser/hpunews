@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { Component, ChangeDetectorRef, ViewChild } from '@angular/core';
+import { NavController, MenuController, Content } from 'ionic-angular';
 
 @Component({
   selector: 'page-job',
@@ -7,10 +7,20 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class JobPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {}
+  @ViewChild(Content) content: Content;
+  showToolbar:boolean = false;
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad JobPage');
+  pushPage: any;
+
+  constructor(public navCtrl: NavController,
+              menu: MenuController,
+              public ref: ChangeDetectorRef,) {
+  }
+
+  onScroll($event: any){
+      let scrollTop = $event.scrollTop;
+      this.showToolbar = scrollTop >= 120;
+      this.ref.detectChanges();
   }
 
 }

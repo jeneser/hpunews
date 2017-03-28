@@ -1,12 +1,20 @@
-<ion-content>
+<ion-header [class.opaque]="showToolbar">
+  <ion-navbar color="transparent">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title [hidden]="!showToolbar">
+      公告
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="content"
+              (ionScroll)="onScroll($event)">
   <div class="cover header-md">
     <img src="assets/imgs/yellow.png" alt="">
-    <div class="header">
-      <button ion-button color="white" menuToggle clear>
-        <ion-icon name="menu"></ion-icon>
-      </button>
-    </div>
   </div>
+
   <div class="classify">
     <button ion-button round>讲座信息</button>
     <button ion-button round>后勤公告</button>
@@ -21,13 +29,13 @@
     </button>
   </div>
 
-  <div class="notice">
+  <div class="notice hot">
     <button ion-item>
       <ion-thumbnail item-left>
         <img src="assets/imgs/folder.svg">
       </ion-thumbnail>
       <h2>教务处关于学习雷锋精神的文件</h2>
-      <p>2017-3-15</p>
+      <button ion-button outline>2017-2-23</button>
       <button ion-button clear item-right>下载</button>
     </button>
     <button ion-item>
@@ -35,7 +43,7 @@
         <img src="assets/imgs/folder.svg">
       </ion-thumbnail>
       <h2>教务处关于学习雷锋精神的文件</h2>
-      <p>2017-3-15</p>
+      <button ion-button outline>2017-2-23</button>
       <button ion-button clear item-right>下载</button>
     </button>
     <button ion-item>
@@ -43,11 +51,25 @@
         <img src="assets/imgs/folder.svg">
       </ion-thumbnail>
       <h2>教务处关于学习雷锋精神的文件</h2>
-      <p>2017-3-15</p>
+      <button ion-button outline>2017-2-23</button>
+      <button ion-button clear item-right>下载</button>
+    </button>
+    <button ion-item>
+      <ion-thumbnail item-left>
+        <img src="assets/imgs/folder.svg">
+      </ion-thumbnail>
+      <h2>教务处关于学习雷锋精神的文件</h2>
+      <button ion-button outline>2017-2-23</button>
+      <button ion-button clear item-right>下载</button>
+    </button>
+    <button ion-item>
+      <ion-thumbnail item-left>
+        <img src="assets/imgs/folder.svg">
+      </ion-thumbnail>
+      <h2>教务处关于学习雷锋精神的文件</h2>
+      <button ion-button outline>2017-2-23</button>
       <button ion-button clear item-right>下载</button>
     </button>
   </div>
-
-
 
 </ion-content>

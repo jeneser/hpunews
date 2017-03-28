@@ -1,4 +1,4 @@
-page-job {
+page-detail {
   .scroll-content {
     margin-top: 0 !important;
   }
@@ -18,16 +18,6 @@ page-job {
     }
     .toolbar-background {
       background-color: color($colors, primary);
-    }
-  }
-  
-  .jobs {
-    h3 {
-      margin-bottom: 0.8rem;
-      font-size: 1.6rem;
-      color: color($colors, black);
-      font-weight: 500;
-      white-space: normal;
     }
   }
 }

@@ -1,0 +1,31 @@
+<ion-header [class.opaque]="showToolbar">
+  <ion-navbar color="transparent">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title [hidden]="!showToolbar">
+      详情页
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="content"
+              (ionScroll)="onScroll($event)">
+  <div class="cover header-md">
+    <img src="assets/imgs/job-bg.png" alt="">
+  </div>
+
+  <div class="articles">
+
+    <div class="article-item" *ngFor=" let i of articles">
+      <img src="http://img3.duitang.com/uploads/item/201607/25/20160725192033_GY2xj.thumb.224_0.jpeg" alt="">
+      <div class="placeholders">
+        <span class="placeholder "></span>
+        <span class="placeholder "></span>
+        <span class="placeholder "></span>
+        <span class="placeholder p20"></span>
+      </div>
+    </div>
+
+  </div>
+</ion-content>

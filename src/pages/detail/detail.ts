@@ -1,17 +1,17 @@
-import { Component, ChangeDetectorRef, ViewChild } from '@angular/core';
-
-import { NavController, MenuController, Content } from 'ionic-angular';
+import {Component, ChangeDetectorRef, ViewChild} from '@angular/core';
+import { NavController, Content } from 'ionic-angular';
 
 @Component({
-  selector: 'page-notice',
-  templateUrl: 'notice.html'
+  selector: 'page-detail',
+  templateUrl: 'detail.html'
 })
-export class NoticePage {
+export class DetailPage {
   @ViewChild(Content) content: Content;
   showToolbar:boolean = false;
 
+  pushPage: any;
+
   constructor(public navCtrl: NavController,
-              menu: MenuController,
               public ref: ChangeDetectorRef,) {
   }
 
@@ -20,6 +20,5 @@ export class NoticePage {
       this.showToolbar = scrollTop >= 120;
       this.ref.detectChanges();
   }
-
 
 }

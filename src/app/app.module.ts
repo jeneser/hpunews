@@ -9,6 +9,7 @@ import { NoticePage } from '../pages/notice/notice';
 import { ClubPage } from '../pages/club/club';
 import { JobPage } from '../pages/job/job';
 import { SettingPage } from '../pages/setting/setting';
+import { DetailPage } from '../pages/detail/detail';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SettingPage } from '../pages/setting/setting';
     NoticePage,
     ClubPage,
     JobPage,
-    SettingPage
+    SettingPage,
+    DetailPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -35,7 +37,8 @@ import { SettingPage } from '../pages/setting/setting';
     NoticePage,
     ClubPage,
     JobPage,
-    SettingPage
+    SettingPage,
+    DetailPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

@@ -1,14 +1,23 @@
-<ion-content>
+<ion-header [class.opaque]="showToolbar">
+  <ion-navbar color="transparent">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title [hidden]="!showToolbar">
+      HPU+
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="content"
+              (ionScroll)="onScroll($event)">
+
   <div class="cover header-md">
     <img src="assets/imgs/homegb.png" alt="">
-    <div class="header">
-      <button ion-button color="white" menuToggle clear>
-        <ion-icon name="menu"></ion-icon>
-      </button>
-    </div>
   </div>
+
   <div class="classify">
-    <button ion-button round>新闻</button>
+    <button ion-button [navPush]="pushPage" round>新闻</button>
     <button ion-button round>生活</button>
     <button ion-button round>有趣</button>
     <button ion-button round>所有标签</button>
@@ -20,41 +29,63 @@
       <button ion-button item-right clear>更多</button>
     </button>
   </div>
-
-  <div class="card-bg">
+  <ion-list class="hot">
     <button ion-item>
-      <img src="assets/imgs/itembg.png"/>
-      <h3 class="card-title">雷锋精神见义勇为乐于助人</h3>
-      <button ion-button class="action" color="white" outline>了解更多</button>
+      <ion-thumbnail item-left>
+        <img src="http://ionicframework.com/dist/preview-app/www/assets/img/card-amsterdam.png">
+      </ion-thumbnail>
+      <h2>学生住宿管理委员会组织召开宿舍安全工作会议...</h2>
+      <button ion-button outline>校内新闻</button>
+      <button ion-button clear>2017-2-23</button>
+    </button>
+    <button ion-item>
+      <ion-thumbnail item-left>
+        <img src="http://ionicframework.com/dist/preview-app/www/assets/img/card-amsterdam.png">
+      </ion-thumbnail>
+      <h2>学生住宿管理委员会组织召开宿舍安全工作会议...</h2>
+      <button ion-button outline>校内新闻</button>
+      <button ion-button clear>2017-2-23</button>
+    </button>
+    <button ion-item>
+      <ion-thumbnail item-left>
+        <img src="http://ionicframework.com/dist/preview-app/www/assets/img/card-amsterdam.png">
+      </ion-thumbnail>
+      <h2>学生住宿管理委员会组织召开宿舍安全工作会议...</h2>
+      <button ion-button outline>校内新闻</button>
+      <button ion-button clear>2017-2-23</button>
+    </button>
+  </ion-list>
+  <div class="column">
+    <button ion-item>
+      <h2>你可能感兴趣的</h2>
+      <p>你要的都在这</p>
+      <button ion-button item-right clear>更多</button>
     </button>
   </div>
-  <div class="card-bg">
+  <ion-list class="hot">
     <button ion-item>
-      <img src="assets/imgs/itembg.png"/>
-      <h3 class="card-title">雷锋精神见义勇为乐于助人</h3>
-      <button ion-button class="action" color="white" outline>了解更多</button>
+      <ion-thumbnail item-left>
+        <img src="http://ionicframework.com/dist/preview-app/www/assets/img/card-amsterdam.png">
+      </ion-thumbnail>
+      <h2>学生住宿管理委员会组织召开宿舍安全工作会议...</h2>
+      <button ion-button outline>校内新闻</button>
+      <button ion-button clear>2017-2-23</button>
     </button>
-  </div>
-  <div class="card-bg">
     <button ion-item>
-      <img src="assets/imgs/itembg.png"/>
-      <h3 class="card-title">雷锋精神见义勇为乐于助人</h3>
-      <button ion-button class="action" color="white" outline>了解更多</button>
+      <ion-thumbnail item-left>
+        <img src="http://ionicframework.com/dist/preview-app/www/assets/img/card-amsterdam.png">
+      </ion-thumbnail>
+      <h2>学生住宿管理委员会组织召开宿舍安全工作会议...</h2>
+      <button ion-button outline>校内新闻</button>
+      <button ion-button clear>2017-2-23</button>
     </button>
-  </div>
-  <div class="card-bg">
     <button ion-item>
-      <img src="assets/imgs/itembg.png"/>
-      <h3 class="card-title">第三届青春飞扬动漫大赛</h3>
-      <button ion-button class="action" color="white" outline>了解更多</button>
+      <ion-thumbnail item-left>
+        <img src="http://ionicframework.com/dist/preview-app/www/assets/img/card-amsterdam.png">
+      </ion-thumbnail>
+      <h2>学生住宿管理委员会组织召开宿舍安全工作会议...</h2>
+      <button ion-button outline>校内新闻</button>
+      <button ion-button clear>2017-2-23</button>
     </button>
-  </div>
-  <div class="card-bg">
-    <button ion-item>
-      <img src="assets/imgs/itembg.png"/>
-      <h3 class="card-title">第三届青春飞扬动漫大赛</h3>
-      <button ion-button class="action" color="white" outline>了解更多</button>
-    </button>
-  </div>
-
+  </ion-list>
 </ion-content>

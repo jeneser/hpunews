@@ -1,12 +1,20 @@
-<ion-content>
+<ion-header [class.opaque]="showToolbar">
+  <ion-navbar color="transparent">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title [hidden]="!showToolbar">
+      就业招聘
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="content"
+              (ionScroll)="onScroll($event)">
   <div class="cover header-md">
     <img src="assets/imgs/job-bg.png" alt="">
-    <div class="header">
-      <button ion-button color="white" menuToggle clear>
-        <ion-icon name="menu"></ion-icon>
-      </button>
-    </div>
   </div>
+
   <div class="classify">
     <button ion-button round>宣讲会</button>
     <button ion-button round>校内招聘</button>

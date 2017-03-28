@@ -1,34 +1,25 @@
 page-home {
-  .card-bg:first-child {
-    margin-top: 1rem;
+  .scroll-content {
+    margin-top: 0 !important;
   }
 
-  .card-bg {
-    .item-md.item-block .item-inner {
-      border: none;
-      button {
-        font-size: 1.4rem;
-      }
-    }
-
-    .label-md {
-      margin: 0.2rem 0.8rem 0.8rem 0;
-    }
-
-    .card-title {
-      position: absolute;
-      bottom: 32%;
-      left: 8%;
-      width: 65%;
-      font-size: 2rem;
-      font-weight: bold;
-      white-space: normal;
-      color: #fff;
-    }
-    .action {
-      position: absolute;
-      bottom: 10%;
-      left: 8%;
+  ion-header, .toolbar-background {
+    background-color: initial !important;
+    transition: background-color 1s ease;
+    &:after {
+      height: 0  !important;
     }
   }
+
+  .opaque {
+    background-color: color($colors, primary) !important;
+    &:after {
+      height: 5px !important;
+    }
+    .toolbar-background {
+      background-color: color($colors, primary);
+    }
+  }
+
+
 }

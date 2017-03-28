@@ -1,17 +1,23 @@
 page-notice {
-
-  .cover {
-    font-size: 0;
+  .scroll-content {
+    margin-top: 0 !important;
   }
 
-  .segment-bar {
-    margin-bottom: 1.6rem;
-    background-color: color($colors, primary);
-    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
-    .segment-button {
-      height: 5.2rem;
-      line-height: 5rem;
-      font-size: 1.6rem;
+  ion-header, .toolbar-background {
+    background-color: initial !important;
+    transition: background-color 1s ease;
+    &:after {
+      height: 0  !important;
+    }
+  }
+
+  .opaque {
+    background-color: color($colors, primary) !important;
+    &:after {
+      height: 5px !important;
+    }
+    .toolbar-background {
+      background-color: color($colors, primary);
     }
   }
 

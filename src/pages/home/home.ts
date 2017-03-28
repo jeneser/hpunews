@@ -1,8 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectorRef, ViewChild } from '@angular/core';
 
-import { NavController, MenuController } from 'ionic-angular';
+import { NavController, MenuController, Content } from 'ionic-angular';
 
-import { SettingPage } from '../setting/setting';
+import { DetailPage } from '../detail/detail';
 
 @Component({
   selector: 'page-home',
@@ -10,13 +10,22 @@ import { SettingPage } from '../setting/setting';
 })
 
 export class HomePage {
+  @ViewChild(Content) content: Content;
+  showToolbar:boolean = false;
 
   pushPage: any;
 
-  constructor(public navCtrl: NavController, menu: MenuController) {
-    this.pushPage = SettingPage;
+  constructor(public navCtrl: NavController,
+              menu: MenuController,
+              public ref: ChangeDetectorRef,) {
+    this.pushPage = DetailPage;
     menu.enable(true, 'menu1');
   }
 
+  onScroll($event: any){
+      let scrollTop = $event.scrollTop;
+      this.showToolbar = scrollTop >= 120;
+      this.ref.detectChanges();
+  }
 
 }
